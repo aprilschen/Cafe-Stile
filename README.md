@@ -13,6 +13,10 @@ Project Home-page was created following [this](https://www.youtube.com/watch?v=1
  - Material UI
 
 ### Install and Run:
-run 'npm install' and 'npm run start' on the root folder
+Run the following commands in the CLI of the root folder:
+ - 'npm install ----legacy-peer-deps'
+ - 'npm run start'
 
-[Hosted Demo]()
+You can find the deployed application [here.](https://main.d3f2th40mcptld.amplifyapp.com/)
+
+Happy exploring!
