@@ -7,7 +7,7 @@ import { FaSearch, FaRegHeart, FaRegUserCircle } from 'react-icons/fa';
 
 const footerMenu = [
   { id: 1, text: 'Explore', icon: <FaSearch size={18} /> },
-  { id: 2, text: 'Wishlist', icon: <FaRegHeart size={18} /> },
+  { id: 2, text: 'Favorites', icon: <FaRegHeart size={18} /> },
   { id: 3, text: 'Login', icon: <FaRegUserCircle size={18} /> },
 ];
 

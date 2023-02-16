@@ -18,8 +18,7 @@ import {
 const footerLinks = [
   { id: 1, text: 'Privacy', url: '#' },
   { id: 2, text: 'Terms', url: '#' },
-  { id: 3, text: 'Sitemap', url: '#' },
-  { id: 4, text: 'Destinations', url: '#' },
+  { id: 3, text: 'Services', url: '#' },
 ];
 
 const Footer = () => {
@@ -39,7 +38,7 @@ const Footer = () => {
         >
           <Stack>
             <Paper>
-              <Link href="#"> 2022 Airbnb Copyright </Link>
+              <Link href="#"> 2022 ©Café Stile</Link>
             </Paper>
             {footerLinks.map((link) => {
               return (
@@ -56,9 +55,9 @@ const Footer = () => {
                 <Box sx={{ ...justifyCenter, mr: 1 }}>
                   <BsGlobe size={24} />
                 </Box>
-                English (CA)
+                English (US)
               </Button>
-              <Button> $CAD </Button>
+              <Button> $USD </Button>
               <Button>
                 Support & Resources
                 <Box sx={{ ...justifyCenter, ml: 1 }}>

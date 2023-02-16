@@ -8,12 +8,12 @@ import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 // react icons
 import { IoSearchCircleSharp } from 'react-icons/io5';
-import { pink } from '@mui/material/colors';
+import { amber } from '@mui/material/colors';
 
 const choices = [
-  { id: 1, text: 'Anywhere' },
-  { id: 2, text: 'Any week' },
-  { id: 3, text: 'Add guest', withIcon: true },
+  { id: 1, text: 'Any Service' },
+  { id: 2, text: 'Any Day' },
+  { id: 3, text: 'Add Filters', withIcon: true },
 ];
 
 const LocationSearch = () => {
@@ -51,7 +51,7 @@ const LocationSearch = () => {
                     mr: 1,
                   }}
                 >
-                  <IoSearchCircleSharp color={pink[500]} size={32} />
+                  <IoSearchCircleSharp color={amber[700]} size={32} />
                 </Box>
               )}
             </Button>
