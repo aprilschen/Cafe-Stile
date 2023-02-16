@@ -17,6 +17,6 @@ Run the following commands in the CLI of the root folder:
  - 'npm install ----legacy-peer-deps'
  - 'npm run start'
 
-You can find the deployed application <a href="https://main.d3f2th40mcptld.amplifyapp.com/" target="_blank">here.</a>
+You can find the deployed application [here.](https://main.d3f2th40mcptld.amplifyapp.com/)
 
 Happy exploring!
