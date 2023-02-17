@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+asgiref = "*"
+psycopg2 = "*"
+pip = "*"
+psycopg2-binary = "*"
+psycopg = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
