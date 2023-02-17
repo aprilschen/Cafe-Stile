@@ -14,7 +14,7 @@ Project Home-page was created following [this](https://www.youtube.com/watch?v=1
 
 ### Install and Run:
 Run the following commands in the CLI of the root folder:
- - 'npm install ----legacy-peer-deps'
+ - 'npm install --legacy-peer-deps'
  - 'npm run start'
 
 You can find the deployed application [here.](https://main.d3f2th40mcptld.amplifyapp.com/)
