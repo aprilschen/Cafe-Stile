@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'cafe-stile',
+       'NAME': 'cafe-stile-2',
        'USER': 'admin',
        'PASSWORD': 'TheNexusGaming1!',
        'HOST': '127.0.0.1',
