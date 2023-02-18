@@ -52,6 +52,7 @@ export default function TransitionsModal() {
     }
 
     axios.post("http://127.0.0.1:8000/api/listings", qs.stringify(info))
+    handleClose();
   }
 
   return (

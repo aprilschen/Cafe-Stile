@@ -15,4 +15,4 @@ class Listing(models.Model):
     rating = models.DecimalField(max_digits=2, decimal_places=1, default=5)
 
     def __str__(self):
-        return str(self.location)
+        return str(self.title)
