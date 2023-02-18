@@ -52,7 +52,7 @@ export default function TransitionsModal() {
                 type="text"
                 placeholder="Chef for hire!"
                 variant="filled"
-                inputProps={{minLength: 2, maxLength: 100, style: {width: 300}}}
+                inputProps={{minLength: 2, maxLength: 120, style: {width: 300}}}
               />
 
               <TextField
@@ -63,7 +63,7 @@ export default function TransitionsModal() {
                 type="text"
                 placeholder="Cupertino, California"
                 variant="filled"
-                inputProps={{minLength: 2, maxLength: 100, style: {width: 300}}}
+                inputProps={{minLength: 2, maxLength: 120, style: {width: 300}}}
               />
 
               <br />
@@ -71,14 +71,13 @@ export default function TransitionsModal() {
               <TextField
                 sx={{mb: 3}}
                 multiline
-                required
                 rows={3}
                 id="description"
                 label="Description"
                 type="text"
                 placeholder="Local dog walking services in the city of Cupertino."
                 variant="filled"
-                inputProps={{minLength: 3, maxLength: 2000, style: {width: 300}}}
+                inputProps={{maxLength: 2000, style: {width: 300}}}
               />
 
               <br />
@@ -105,7 +104,7 @@ export default function TransitionsModal() {
               type="text"
               placeholder="$20.00 per hour"
               variant="filled"
-              inputProps={{maxLength: 20, style: {width: 300}}}
+              inputProps={{maxLength: 200, style: {width: 300}}}
 
               />
 
@@ -114,12 +113,14 @@ export default function TransitionsModal() {
               <TextField
               sx={{mb: 3}}
               required
+              multiline
+              rows={2}
               id="contact"
               label="Contact"
               type="text"
               placeholder="How can potential clients contact you?"
               variant="filled"
-              inputProps={{maxLength: 20, style: {width: 300}}}
+              inputProps={{maxLength: 1000, style: {width: 300}}}
 
               />
 
@@ -127,10 +128,12 @@ export default function TransitionsModal() {
 
               <TextField
                 sx={{mb: 3}}
+                multiline
+                rows={2}
                 id="tags"
                 label="Tags"
                 type="text"
-                placeholder="Japan, Cityscape, Aesthetic"
+                placeholder="Gig, Transportation, Tutoring"
                 variant="filled"
                 size="small"
                 inputProps={{maxLength: 2000, style: {width: 300}}}
