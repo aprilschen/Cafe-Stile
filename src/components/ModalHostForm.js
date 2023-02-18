@@ -34,11 +34,13 @@ export default function TransitionsModal() {
   const [price, setPrice] = useState("");
   const [contact, setContact] = useState("");
   const [tags, setTags] = useState("");
+  const [images, setImages] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
+    const imageList = images.split(',');
     const info = {
-      locationImageList: [],
+      locationImageList: imageList,
       title: title,
       location: location,
       description: description,
@@ -175,6 +177,22 @@ export default function TransitionsModal() {
               />
 
               <br />
+
+              <TextField
+                sx={{mb: 3}}
+                multiline
+                required
+                rows={2}
+                id="images"
+                label="Images"
+                type="text"
+                placeholder="https://images.com/photo1432"
+                helperText="Enter as comma separated list,"
+                variant="filled"
+                size="small"
+                onChange={e => setImages(e.target.value)}
+                inputProps={{maxLength: 2000, style: {width: 300}}}
+              />
 
               <Button
               type="submit"

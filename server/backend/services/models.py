@@ -2,14 +2,8 @@ from django.db import models
 from django.contrib.postgres.fields import ArrayField
 
 # Create your models here.
-class ImageHolder(models.Model):
-    url = models.CharField(max_length=2000)
-
-    def __str__(self):
-        return str(self.url)
-
 class Listing(models.Model):
-    locationImageList = models.ManyToManyField(ImageHolder, blank=True)
+    locationImageList = ArrayField(models.CharField(max_length=2000, default="", blank=True), default=list)
     title = models.CharField(max_length=120, default="")
     location = models.CharField(max_length=120, default="")
     description = models.TextField(max_length=2000, blank=True, default="")
