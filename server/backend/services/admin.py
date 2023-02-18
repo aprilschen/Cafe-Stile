@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Listing, Images
+from .models import Listing, ImageHolder
 # Register your models here.
 admin.site.register(Listing)
-admin.site.register(Images)
+admin.site.register(ImageHolder)
