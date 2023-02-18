@@ -6,7 +6,6 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 // react icons
-import { BsGlobe } from 'react-icons/bs';
 import { IoChevronUpOutline } from 'react-icons/io5';
 
 import {
@@ -51,13 +50,6 @@ const Footer = () => {
 
           <Stack>
             <Paper sx={justifyCenter}>
-              <Button>
-                <Box sx={{ ...justifyCenter, mr: 1 }}>
-                  <BsGlobe size={24} />
-                </Box>
-                English (US)
-              </Button>
-              <Button> $USD </Button>
               <Button>
                 Support & Resources
                 <Box sx={{ ...justifyCenter, ml: 1 }}>

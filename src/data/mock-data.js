@@ -15,10 +15,11 @@ import {
   GiMineTruck,
   GiOrganigram,
 } from 'react-icons/gi';
-import { AiOutlineCoffee } from 'react-icons/ai';
+import { AiOutlineCoffee, AiOutlineWallet } from 'react-icons/ai';
 import { FaUmbrellaBeach } from 'react-icons/fa';
 
 export const locationsTab = [
+  { id: 0, label: 'All Services', icon: <AiOutlineWallet size={24}/> },
   { id: 1, label: 'Conferences', icon: <MdOutlineApartment size={24} /> },
   { id: 2, label: 'Rental', icon: <MdHouseSiding size={24} /> },
   { id: 3, label: 'Themed Services', icon: <GiCastle size={24}/>},

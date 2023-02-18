@@ -20,6 +20,15 @@ const Logo = () => {
       >
         Café Stile
       </Typography>
+      <Typography
+        sx={{
+          ml: 4,
+          fontSize: '12px',
+          fontWeight: 'bold',
+        }}
+      >
+        Services Near You
+      </Typography>
     </Box>
   );
 };
