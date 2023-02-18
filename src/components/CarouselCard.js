@@ -26,7 +26,7 @@ import './CarouselCard.css';
 const CarouselCard = ({ location }) => {
   const [activeStep, setActiveStep] = React.useState(0);
 
-  const maxSteps = location.locationImages.length; // so that we know how many dots
+  const maxSteps = location.locationImageList.length; // so that we know how many dots
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1); // jumps when we click the next arrow
@@ -51,21 +51,20 @@ const CarouselCard = ({ location }) => {
         <FaRegHeart size={24} color="#fff" />
       </Box>
 
-      {location.locationImages.length && (
+      {location.locationImageList.length && (
         <SwipeableViews
           axis={'x'}
           index={activeStep}
           onChangeIndex={handleStepChange}
           enableMouseEvents
         >
-          {location.locationImages.map((step, index) => {
+          {location.locationImageList.map((step, index) => {
             return (
               <div key={step.id}>
                 <Box
                   component="img"
                   sx={carouselImage}
-                  src={step.url}
-                  alt={step.id}
+                  src={step}
                 ></Box>
               </div>
             );
@@ -104,6 +103,7 @@ const CarouselCard = ({ location }) => {
 
       <Box sx={flexBetween}>
         <Box sx={{ mt: 2 }}>
+          <Typography component="h3"> {location.title}</Typography>
           <Typography component="h3"> {location.location}</Typography>
           <Typography component="h4"> {location.days}</Typography>
           <Typography component="h5"> {location.price}</Typography>
@@ -117,7 +117,7 @@ const CarouselCard = ({ location }) => {
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <Typography component="h5"> {location.rating}</Typography>
+                <Typography component="h5"> {parseFloat(location.rating)}</Typography>
                 <AiFillStar size={18} />
               </React.Fragment>
             )}
