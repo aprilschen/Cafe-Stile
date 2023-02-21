@@ -34,7 +34,7 @@ function LocationCards() {
     }
     console.log(data[0])
   return (
-    <Box sx={{ mx: 2 }}>
+    <Box sx={{ mx: 2, my: 4 }}>
         <Grid container rowSpacing={3} columnSpacing={3}>
         {data.map((location) => {
           return (
